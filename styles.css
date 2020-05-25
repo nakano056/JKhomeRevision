@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+
+  background-image: url("images/peppaBg.jpg");
+}
+
+#title {
+  font-size: 4.5rem;
+  color: lime;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 white;
+
+}
+
+#ans{
+  margin-top: 30%;
+  font-size: 10rem;
+}
+
+.qDisplay1 {
+font-size: 8rem;
+color:navy;
+}
+
+.notStarted{
+visibility: hidden;
+}
+
+
+
+footer {
+  color: blue;
+  font-family: sans-serif;
+}
+
+#questionSelection{
+text-align: left;
+margin-left: 2%;
+}
+
+.form-check{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.3rem;
+}
+
+.form-check-label{
+  color: white;
+}
+
+
+.questionDisplay {
+  margin: 10% auto;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.2;
+}
+
+.wDisplay{
+  color:red;
+  font-size: 2rem;
+  text-align: center;
+}
