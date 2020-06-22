@@ -168,9 +168,9 @@ function checkAnswer(correctAnsAdd) {
 
 function nextQuestionA() {
 
-  var number1 = Math.floor(Math.random() * 100);
-  var number2 = Math.floor(Math.random() * 100);
-  var number3 = Math.floor(Math.random() * 100);
+  var number1 = Math.floor(Math.random() * 11);
+  var number2 = Math.floor(Math.random() * 11);
+  var number3 = Math.floor(Math.random() * 11);
 
   var ansAdd = number1 + number2 - number3;
 
