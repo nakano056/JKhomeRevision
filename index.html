@@ -21,47 +21,58 @@
 
 
 
-  <div  id="questionSelection">
+  <div id="questionSelection">
 
-    <div  >
+    <div class="container-fluid">
 
-    <button type="button" class="btn btn-primary" id = "addB">Addition</button>
-    <button type="button" class="btn btn-primary" id = "subB">Subtraction</button>
-    <button type="button" class="btn btn-primary" id = "multiB">Multiplication</button>
-    <button type="button" class="btn btn-primary" id = "pegB">Peg Memory</button>
+      <button type="button" class="btn btn-primary" id="addB">Add&Sub</button>
+      <button type="button" class="btn btn-primary" id="subB">Division</button>
+      <button type="button" class="btn btn-primary" id="multiB">Multiplication</button>
+      <button type="button" class="btn btn-primary" id="pegB">Peg Memory</button>
 
     </div>
     <div class="form-check form-check-inline">
-      <input class="form-check-input noQ" type="radio" name="inlineRadioOptions" id="inlineRadio1" value= "10">
+      <input class="form-check-input noQ" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="10">
       <label class="form-check-label" for="inlineRadio1">10</label>
     </div>
     <div class="form-check form-check-inline">
-      <input class="form-check-input noQ" type="radio" name="inlineRadioOptions" id="inlineRadio2" value= "20">
+      <input class="form-check-input noQ" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="20">
       <label class="form-check-label" for="inlineRadio2">20</label>
     </div>
 
 
 
-    <div>
-    <button type="button" class="btn btn-primary startB">Start</button>
-    <button type="button" class="btn btn-success nextB">Next</button>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-1">
+          <button type="button" class="btn btn-primary startB">Start</button>
+        </div>
+        <div class="col-11">
+        </div>
+      </div>
+
     </div>
   </div>
 
   <div class="container-fluid">
+
     <div class="row">
-      <div class="col-8 questionDisplay">
+      <div class="col-7 questionDisplay">
         <p class="qDisplay1">Get Ready</p>
       </div>
       <div class="col-4 questionAns notStarted">
         <input class="form-control " id="ans" type="text" placeholder="">
       </div>
+      <div class="col-1 ">
+        <button type="button" class="btn-lg btn-warning nextB">Next</button>
+      </div>
 
     </div>
 
 
 
-    </div>
+  </div>
   </div>
 
 

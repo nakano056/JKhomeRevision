@@ -170,11 +170,22 @@ function nextQuestionA() {
 
   var number1 = Math.floor(Math.random() * 100);
   var number2 = Math.floor(Math.random() * 100);
+  var number3 = Math.floor(Math.random() * 100);
 
-  $(".qDisplay1").text(number1 + " + " + number2 + " = ");
+  var ansAdd = number1 + number2 - number3;
+
+  while (ansAdd < 0){
+    number1 = Math.floor(Math.random() * 100);
+    number2 = Math.floor(Math.random() * 100);
+    number3 = Math.floor(Math.random() * 100);
+
+    ansAdd = number1 + number2 - number3;
+
+  }
+
+  $(".qDisplay1").text(number1 + " + " + number2 + " - " + number3 + " = ");
   $(".questionAns").removeClass("notStarted");
 
-  var ansAdd = number1 + number2;
 
   return ansAdd;
 }
@@ -182,22 +193,22 @@ function nextQuestionA() {
 function nextQuestionS() {
 
   var number1 = Math.floor(Math.random() * 100);
-  var number2 = Math.floor(Math.random() * 100);
+  var number2 = Math.floor(Math.random() * 11);
+  var ansAdd = number1/number2;
+  var ansRem = number1%number2;
 
-  if (number1 >= number2) {
-    $(".qDisplay1").text(number1 + " - " + number2 + " = ");
-    $(".questionAns").removeClass("notStarted");
-
-    var ansAdd = number1 - number2;
-    return ansAdd;
-
-  } else {
-    $(".qDisplay1").text(number2 + " - " + number1 + " = ");
-    $(".questionAns").removeClass("notStarted");
-    var ansAdd = number2 - number1;
-    return ansAdd;
-
+  while (ansRem != 0){
+    number1 = Math.floor(Math.random() * 100);
+    number2 = Math.floor(Math.random() * 11);
+    ansAdd = number1/number2;
+    ansRem = number1%number2;
   }
+  $(".qDisplay1").text(number1 + " / " + number2 + " = ");
+  $(".questionAns").removeClass("notStarted");
+
+
+  return ansAdd;
+
 
 
 }
