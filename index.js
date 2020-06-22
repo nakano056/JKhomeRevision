@@ -168,7 +168,7 @@ function checkAnswer(correctAnsAdd) {
 
 function nextQuestionA() {
 
-  var number1 = Math.floor(Math.random() * 11);
+  var number1 = Math.floor(Math.random() * 100);
   var number2 = Math.floor(Math.random() * 11);
   var number3 = Math.floor(Math.random() * 11);
 
@@ -176,8 +176,8 @@ function nextQuestionA() {
 
   while (ansAdd < 0){
     number1 = Math.floor(Math.random() * 100);
-    number2 = Math.floor(Math.random() * 100);
-    number3 = Math.floor(Math.random() * 100);
+    number2 = Math.floor(Math.random() * 11);
+    number3 = Math.floor(Math.random() * 11);
 
     ansAdd = number1 + number2 - number3;
 
